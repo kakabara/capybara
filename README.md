@@ -1,2 +1,3 @@
-# capybara
-Dictionary attributes validations
+# capybara 
+Python library
+Simple dictionary attributes validations
