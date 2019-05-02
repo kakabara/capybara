@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='capybara',
-    version='0.1',
+    version='0.12',
     description='Capybara validation attributes',
     author='Vlasov Sergei',
     author_email='sergei_vlasov@icloud.com',
