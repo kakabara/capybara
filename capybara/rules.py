@@ -7,7 +7,7 @@ import jsonschema
 
 def required(message="Field is not presented"):
     def check(field: str, dict_to_check: dict):
-        if dict_to_check.get(field) is not None:
+        if field in dict_to_check:
             return True, None
         else:
             return False, message
