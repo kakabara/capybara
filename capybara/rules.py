@@ -110,7 +110,7 @@ def is_ip(message="Value is not ipv4 address"):
 
 def is_email(message="Is not email address"):
     def check(field: str, dict_to_check: dict):
-        email_reg = '[^@]+@[^@]+\.[^@]+'
+        email_reg = r'[^@]+@[^@]+\.[^@]+'
         value = dict_to_check.get(field)
         if not value:
             return True, None
