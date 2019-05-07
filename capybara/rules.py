@@ -124,7 +124,7 @@ def is_email(message="Is not email address"):
 def is_phone(message="Is not phone"):
     def check(field: str, dict_to_check: dict):
 
-        phone_reg = """([0-9]{10})|([0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4})|([0-9]{3}[.]{1}[0-9]{3}[.]
+        phone_reg = r"""([0-9]{10})|([0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4})|([0-9]{3}[.]{1}[0-9]{3}[.]
         {1}[0-9]{4})|([\(]{1}[0-9]{3}[\)][ ]{1}[0-9]{3}[-]{1}[0-9]{4})|([0-9]{3}[-]{1}[0-9]{4})"""
         value = dict_to_check.get(field)
         if value.count('+') > 1:
