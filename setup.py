@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='capybara',
-    version='0.12',
+    version='0.13',
     description='Capybara validation attributes',
     author='Vlasov Sergei',
     author_email='sergei_vlasov@icloud.com',
@@ -10,6 +10,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         'ipaddress==1.0.22',
-        'jsonschema==2.6.0'
+        'jsonschema==3.0.1'
     ]
 )
